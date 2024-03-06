@@ -34,7 +34,7 @@
 
 <section>
 	<div class="homeSection">
-		<h1>HOME</h1>
+		<h1>TEAM1</h1>
 		<p id="sumHome">{countHome}</p>
 		<div class="addPoints">
 			<button on:click={addHome1}>+1</button>
@@ -46,7 +46,7 @@
 		<button on:click={reset}>RESET</button>
 	</div>
 	<div class="guestSection">
-		<h1>GUEST</h1>
+		<h1>TEAM2</h1>
 		<p id="sumGuest">{countGuest}</p>
 		<div class="addPoints">
 			<button on:click={addGuest1}>+1</button>
@@ -114,10 +114,6 @@
 		gap: 10px;
 	}
 
-	.addPoints button:hover {
-		background-color: #2c355d;
-	}
-
 	.addPoints button:active {
 		background-color: #0f162d;
 	}
@@ -132,9 +128,6 @@
         border-radius: 5px;
 	}
 
-    .controlPanel button:hover {
-        background-color: #33408C;
-    }
 
     .controlPanel button:active {
         background-color: #1F2B60;
@@ -146,5 +139,14 @@
             bottom: 50px;
         }
     }
+
+	@media only screen and (min-width: 1100px){
+		.addPoints button:hover {
+		background-color: #2c355d;
+	}
+	.controlPanel button:hover {
+		background-color: #33408C;
+	}
+	}
 
 </style>
